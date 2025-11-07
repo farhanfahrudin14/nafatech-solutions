@@ -26,7 +26,7 @@ export default function ContactPage() {
     const targetNumber = "6283894301502";
     const message = `
 Halo *Admin NexTechSolutions*!  
-Saya, *${nama}*.  
+Saya, ${nama}.  
 No HP: ${noWa}
 Keperluan:
 ${pesan}
