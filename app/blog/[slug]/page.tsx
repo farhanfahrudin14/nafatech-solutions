@@ -15,7 +15,7 @@ export default async function BlogDetail({
   if (!post) return notFound();
 
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-gray-50 min-h-screen">
       <section className="py-20 px-6 max-w-4xl mx-auto text-gray-800">
         {/* Judul */}
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
