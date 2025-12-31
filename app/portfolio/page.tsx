@@ -13,22 +13,28 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "ePengantar",
-    client: "Kementerian Ketenagakerjaan",
-    desc: "Aplikasi pengelolaan surat pengantar berbasis web dengan alur persetujuan terstruktur.",
-    img: "/images/coba.jpg",
+    title: "Website Sistem Infomasi SDN 3 Sikampuh",
+    client: "Proyek Website",
+    desc: "Website Sistem Informasi SDN 3 Sikampuh ini dikembangkan menggunakan CodeIgniter 3 dengan desain modern, responsif, dan mudah digunakan untuk mendukung penyampaian informasi sekolah. Website ini mencakup halaman Beranda; halaman Profil berisi sejarah, visi misi, struktur organisasi, fasilitas, dan daftar guru; serta halaman Akademik yang memuat ekstrakurikuler, prestasi, dan data siswa. Tersedia juga halaman Berita, PPDB, Kontak, serta halaman Admin untuk mengelola seluruh konten dan pengaturan website. Dengan dukungan CI3, MySQL, Bootstrap, dan jQuery & AJAX, sistem ini mampu menyajikan informasi secara cepat, terstruktur, dan optimal di berbagai perangkat.",
+    img: "/images/portfolio/portfolio1.png",
   },
   {
-    title: "Sosialoka Web App",
-    client: "Sosialoka",
-    desc: "Platform manajemen kampanye sosial dan monitoring performa konten. Ini deskripsi contoh yang super panjang biar kamu bisa lihat tombol Lihat Selengkapnya muncul di bawah card jika karakternya melebihi batas tertentu.",
-    img: "/images/sosialoka.png",
+    title: "Website Sistem Infomasi Pariwisata Jawa Tengah",
+    client: "Proyek Website",
+    desc: "Website Sistem Informasi Pariwisata Jawa Tengah ini dikembangkan menggunakan CodeIgniter 4 untuk menyediakan informasi destinasi wisata secara lebih terstruktur dan mudah diakses. Website ini menampilkan daftar paket wisata, detail lokasi, kategori wisata, serta informasi fasilitas yang tersedia di setiap destinasi. Selain halaman utama dan daftar paket wisata, sistem ini juga dilengkapi halaman admin yang memungkinkan pengelolaan penuh terhadap data destinasi, kategori, paket, dan informasi tambahan lainnya. Dengan dukungan CI3, MySQL, Bootstrap, website ini dirancang responsif, cepat, dan nyaman digunakan di berbagai perangkat.",
+    img: "/images/portfolio/portfolio3.png",
   },
   {
-    title: "Bizhub",
-    client: "Kementerian Ketenagakerjaan",
-    desc: "Ekosistem kolaborasi bisnis dan pelatihan kerja dalam satu platform.",
-    img: "/images/bizhub.png",
+    title: "Website Sistem Infomasi SDN Kalikidang",
+    client: "Proyek Website",
+    desc: "Website Sistem Informasi SDN Kalikidang ini dikembangkan menggunakan CodeIgniter 3 dengan tampilan modern dan responsif untuk mempermudah penyampaian informasi sekolah. Website ini terdiri dari halaman Beranda, halaman Profil yang mencakup sejarah, visi misi, struktur organisasi, fasilitas, dan daftar guru, serta halaman Akademik yang berisi ekstrakurikuler, materi pelajaran, dan prestasi siswa. Selain itu tersedia halaman Berita, Galeri, PPDB, serta Kontak untuk memudahkan pengunjung memperoleh informasi penting. Website ini juga dilengkapi halaman Admin yang memungkinkan pengelolaan penuh terhadap semua data dan konten yang ditampilkan. Dengan dukungan CI3, MySQL, Bootstrap, dan jQuery & AJAX, sistem ini mampu menyajikan informasi secara cepat, teratur, dan optimal di berbagai perangkat.",
+    img: "/images/portfolio/portfolio2.png",
+  },
+  {
+    title: "Website Sistem Pengelolaan UMKM Fokusku UMP",
+    client: "Proyek Website",
+    desc: "Website Sistem Pengelolaan UMKM Fokusku UMP ini dikembangkan sebagai platform terpadu untuk mengelola dan menampilkan informasi produk UMKM binaan UMP. Sistem ini memiliki tiga jenis halaman utama: halaman User untuk melihat daftar produk, detail UMKM, dan informasi lokasi; halaman Seller untuk mengelola produk, profil usaha, serta laporan penjualan; serta halaman Admin untuk mengatur seluruh data, termasuk manajemen seller, produk, kategori, dan pengaturan sistem. Website ini dibangun menggunakan Next.js pada frontend, Laravel pada backend, serta MySQL sebagai basis data, sehingga menghasilkan performa yang cepat, aman, dan responsif di berbagai perangkat.",
+    img: "/images/portfolio/portfolio4.png",
   },
 ];
 
@@ -102,7 +108,7 @@ export default function Portfolio() {
               >
                 {/* Klik gambar → modal gambar */}
                 <div
-                  className="relative w-full h-56 group"
+                  className="relative w-full h-56 group cursor-pointer"
                   onClick={() => openImageModal(p)}
                 >
                   <Image
@@ -111,6 +117,28 @@ export default function Portfolio() {
                     fill
                     className="object-cover"
                   />
+
+                  {/* Overlay Hover */}
+                  <div
+                    className="
+    absolute inset-0 
+    bg-black/60 backdrop-blur-sm
+    opacity-0 group-hover:opacity-100
+    transition-all duration-500 ease-out
+    flex items-center justify-center
+  "
+                  >
+                    <span
+                      className="
+      text-white text-l font-medium
+      opacity-0 translate-y-2 scale-95
+      group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100
+      transition-all duration-500 ease-out
+    "
+                    >
+                      Lihat Gambar
+                    </span>
+                  </div>
                 </div>
 
                 <div className="p-5">
@@ -126,7 +154,7 @@ export default function Portfolio() {
 
                   {isLong && (
                     <button
-                      className="mt-3 text-blue-600 underline text-sm"
+                      className="mt-3 text-blue-600 underline text-sm cursor-pointer"
                       onClick={() => openDescriptionModal(p)}
                     >
                       Lihat Selengkapnya
@@ -160,7 +188,9 @@ export default function Portfolio() {
                   <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
                     {selected.title}
                   </h3>
-                  <div className="relative w-full h-72 md:h-80">
+
+                  {/* Gambar modal */}
+                  <div className="relative w-full h-72 md:h-80 cursor-pointer">
                     <Image
                       src={selected.img}
                       alt={selected.title}
@@ -182,9 +212,10 @@ export default function Portfolio() {
                 </div>
               )}
 
+              {/* Tombol Tutup */}
               <button
                 onClick={hideModal}
-                className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition self-center"
+                className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition self-center cursor-pointer"
               >
                 Tutup
               </button>

@@ -43,7 +43,7 @@ Terima kasih.`;
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "halo@webinaja.com",
+      value: "nextech@gmail.com",
       href: "mailto:halo@webinaja.com",
     },
     {
@@ -55,19 +55,19 @@ Terima kasih.`;
     {
       icon: <FaInstagram />,
       title: "Instagram",
-      value: "@webinaja",
-      href: "https://instagram.com/webinaja",
+      value: "@nextech_solutions.id",
+      href: "https://www.instagram.com/nextech_solutions.id?igsh=dTJjc3VoaXMwODBz",
     },
     {
       icon: <FaTwitter />,
       title: "X (Twitter)",
-      value: "@webinaja",
+      value: "@nextech_solutions.id",
       href: "https://x.com/webinaja",
     },
     {
       icon: <FaTiktok />,
       title: "TikTok",
-      value: "@webinaja",
+      value: "@nextech_solutions.id",
       href: "https://www.tiktok.com/@webinaja",
     },
   ];

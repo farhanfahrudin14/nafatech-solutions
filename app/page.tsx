@@ -10,6 +10,8 @@ interface Promo {
   img: string;
   label: string;
   info: string;
+  oldPrice?: string;
+  price?: string;
 }
 
 export default function Home() {
@@ -19,23 +21,26 @@ export default function Home() {
 
   const promos: Promo[] = [
     {
-      title: "Promo Pembuatan Landing Page seharga 490k",
+      title: "Promo Pembuatan Landing Page seharga 450k",
       desc: "Buat landing page dengan performa top, design yang cantik, dan proses cepat.",
-      img: "/images/coba.jpg",
+      img: "/images/promo/promo1.png",
       label: "Promo",
+      oldPrice: "500k",
+      price: "450k",
       info: "Promo aktif bulan ini • Kuota terbatas",
     },
+
     {
       title: "Gratis Konsultasi Desain Website",
       desc: "Konsultasi kebutuhan websitemu secara gratis dengan tim kami.",
-      img: "/images/promo-consult.png",
+      img: "/images/promo/promo2.png",
       label: "Gratis",
       info: "Tersedia untuk pelanggan baru • Berlaku bulan ini",
     },
     {
       title: "Diskon 25% untuk Sistem Informasi Instansi",
       desc: "Bangun sistem informasi kampus atau instansi dengan harga hemat.",
-      img: "/images/promo-sistem.png",
+      img: "/images/promo/promo3.png",
       label: "Diskon",
       info: "Berlaku hingga akhir bulan • Kuota terbatas",
     },
@@ -85,7 +90,7 @@ export default function Home() {
         >
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 leading-tight">
             Solusi Kebutuhan Digital Terbaik, Bersama{" "}
-            <span className="text-gray-900">NexTechSolution</span>
+            <span className="text-gray-900">NexTechSolutions</span>
           </h1>
 
           <p className="text-sm md:text-base text-gray-600 max-w-lg mx-auto md:mx-0">
@@ -141,7 +146,7 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">
-          Tentang NexTechSolution
+          Tentang NexTechSolutions
         </h2>
         <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
           NexTechSolution adalah penyedia layanan digital yang berfokus pada
