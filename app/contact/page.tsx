@@ -49,8 +49,8 @@ Terima kasih.`;
     {
       icon: <FaWhatsapp />,
       title: "Phone",
-      value: "(+62) 838 9430 1502",
-      href: "https://wa.me/6283894301502",
+      value: "(+62) 85890007138",
+      href: "https://wa.me/6285890007138",
     },
     {
       icon: <FaInstagram />,
