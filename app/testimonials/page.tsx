@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     date: "12 Desember 2025",
   },
   {
-    image: "/images/testi/7.jpeg",
+    image: "/images/testi/7_new.jpeg",
     caption: "Testimoni WA",
     date: "20 Desember 2025",
   },

@@ -4,11 +4,11 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop"; // ✅ gunakan alias @
 
 export const metadata = {
-  title: "NexTechSolutions",
+  title: "NafaTechSolutions",
   description:
-    "NexTechSolution adalah penyedia layanan digital yang berfokus pada pembuatan website, desain UI/UX, serta pembuatan dokumen visual seperti flowchart dan wireframe. Kami menghadirkan solusi modern yang responsif, mudah digunakan, dan dirancang untuk mendukung perkembangan bisnismu agar semakin relevan dan kompetitif di era digital.",
+    "NafaTechSolutions adalah penyedia layanan digital yang berfokus pada pembuatan website, desain UI/UX, serta pembuatan dokumen visual seperti flowchart dan wireframe. Kami menghadirkan solusi modern yang responsif, mudah digunakan, dan dirancang untuk mendukung perkembangan bisnismu agar semakin relevan dan kompetitif di era digital.",
   icons: {
-    icon: "/images/jasa2.png",
+    icon: "/images/logo2.png",
   },
 };
 

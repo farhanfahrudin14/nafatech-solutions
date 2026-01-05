@@ -24,19 +24,23 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/jasa2.png"
+              src="/images/logo.png"
               alt="Logo"
-              width={40}
-              height={40}
+              width={180}
+              height={180}
               className="rounded-lg"
             />
-            <h2 className="text-sm md:text-lg font-bold leading-[1.05] text-[#0A57F7]">
-              NexTech
-              <span className="block text-[11px] md:text-sm font-medium leading-[1.05] mt-[1px] text-[#0A57F7]">
+
+            {/* <div className="flex flex-col justify-center leading-[1]">
+              <h2 className="text-sm md:text-lg font-bold text-[#0A57F7]">
+                NafaTech
+              </h2>
+              <span className="text-[11px] md:text-sm font-medium text-[#0A57F7] -mt-0.5">
                 Solutions
               </span>
-            </h2>
+            </div> */}
           </div>
+
           <p className="text-sm leading-relaxed text-gray-600">
             Kami bantu wujudkan kebutuhan digitalmu — dari desain UI/UX,
             website, hingga sistem manajemen profesional yang efisien.
@@ -104,10 +108,10 @@ export default function Footer() {
           <h3 className="text-[#0A57F7] font-semibold mb-4">Hubungi Kami</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-center gap-2">
-              <FaEnvelope className="text-blue-600" /> support@nextech.com
+              <FaEnvelope className="text-blue-600" /> support@nafatech.com
             </li>
             <li className="flex items-center gap-2">
-              <FaGlobe className="text-blue-600" /> www.nextech.com
+              <FaGlobe className="text-blue-600" /> www.nafatech.com
             </li>
           </ul>
 
@@ -131,7 +135,7 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="mt-12 border-t border-gray-300 pt-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()}{" "}
-        <span className="text-blue-700 font-medium">NexTechSolutions</span>.
+        <span className="text-blue-700 font-medium">NafaTechSolutions</span>.
         Semua hak dilindungi.
       </div>
     </footer>

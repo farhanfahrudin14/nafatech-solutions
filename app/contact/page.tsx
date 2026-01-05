@@ -25,7 +25,7 @@ export default function ContactPage() {
 
     const targetNumber = "6283894301502";
     const message = `
-Halo *Admin NexTechSolutions*!  
+Halo *Admin NafaTechSolutions*!  
 Saya, ${nama}.  
 No HP: ${noWa}
 Keperluan:
@@ -43,7 +43,7 @@ Terima kasih.`;
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "nextech@gmail.com",
+      value: "nafatech@gmail.com",
       href: "mailto:halo@webinaja.com",
     },
     {
@@ -55,19 +55,19 @@ Terima kasih.`;
     {
       icon: <FaInstagram />,
       title: "Instagram",
-      value: "@nextech_solutions.id",
-      href: "https://www.instagram.com/nextech_solutions.id?igsh=dTJjc3VoaXMwODBz",
+      value: "@nafatech_solutions.id",
+      href: "https://www.instagram.com/nafatech_solutions.id?igsh=Z256eDlqc24zZ3My&utm_source=qr",
     },
     {
       icon: <FaTwitter />,
       title: "X (Twitter)",
-      value: "@nextech_solutions.id",
+      value: "@nafatech_solutions.id",
       href: "https://x.com/webinaja",
     },
     {
       icon: <FaTiktok />,
       title: "TikTok",
-      value: "@nextech_solutions.id",
+      value: "@nafatech_solutions.id",
       href: "https://www.tiktok.com/@webinaja",
     },
   ];
@@ -97,7 +97,7 @@ Terima kasih.`;
         <p className="text-gray-600 text-base md:text-lg">
           Isi data singkat di bawah ini untuk langsung terhubung dengan{" "}
           <span className="font-semibold text-blue-600">
-            Admin NexTechSolutions
+            Admin NafaTechSolutions
           </span>{" "}
           melalui WhatsApp.
         </p>

@@ -90,7 +90,7 @@ export default function Home() {
         >
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 leading-tight">
             Solusi Kebutuhan Digital Terbaik, Bersama{" "}
-            <span className="text-gray-900">NexTechSolutions</span>
+            <span className="text-gray-900">NafaTechSolutions</span>
           </h1>
 
           <p className="text-sm md:text-base text-gray-600 max-w-lg mx-auto md:mx-0">
@@ -146,10 +146,10 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">
-          Tentang NexTechSolutions
+          Tentang NafaTechSolutions
         </h2>
         <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
-          NexTechSolution adalah penyedia layanan digital yang berfokus pada
+          NafaTechSolutions adalah penyedia layanan digital yang berfokus pada
           pembuatan website, desain UI/UX, serta pembuatan dokumen visual
           seperti flowchart dan wireframe. Kami menghadirkan solusi modern yang
           responsif, mudah digunakan, dan dirancang untuk mendukung perkembangan
@@ -370,7 +370,7 @@ export default function Home() {
           Semua Bisa Lebih Mudah dengan Dukungan Kami
         </h2>
         <p className="mb-8 text-blue-100">
-          Mulai langkah digitalmu bersama NexTechSolution sekarang juga!
+          Mulai langkah digitalmu bersama NafaTechSolutions sekarang juga!
         </p>
         <a
           href="/contact"
