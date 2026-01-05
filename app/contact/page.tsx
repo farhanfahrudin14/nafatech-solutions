@@ -23,7 +23,7 @@ export default function ContactPage() {
       return;
     }
 
-    const targetNumber = "6283894301502";
+    const targetNumber = "6285890007138";
     const message = `
 Halo *Admin NafaTechSolutions*!  
 Saya, ${nama}.  
